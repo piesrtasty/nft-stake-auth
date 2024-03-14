@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+nft_stake_auth = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[programs.devnet]
+nft_stake_auth = "9N4GhTKi5xuYszc1CRVs9R783HpCHFc6kwG8XruXhfcK"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/piesrtasty/development/projects/sol-mice/NFT-Staking-Program/nft-stake-auth/testnet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
